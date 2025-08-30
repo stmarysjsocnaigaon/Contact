@@ -1,142 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - St. Mary’s Jacobite Syrian Church Naigaon</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    function toggleMenu() {
-      document.getElementById("mobile-menu").classList.toggle("hidden");
-    }
-  </script>
-</head>
-<body class="bg-gray-50 text-gray-800">
+<section id="contact" class="bg-gray-50 py-12 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-3">
-          <a href="index.html" class="flex items-center">
-            <img src="/About-Us/LOGO PNG.png" alt="Church Logo" class="h-12 w-auto">
-            <span class="ml-2 text-base md:text-lg font-bold text-blue-800">
-              St. Mary’s Jacobite Syrian Orthodox Church
-            </span>
-          </a>
-        </div>
-        <div class="hidden md:flex space-x-8">
-          <a href="https://stmarysjsocnaigaon.github.io/Home/" class="text-gray-700 hover:text-blue-700 font-medium">Home</a>
-          <a href="https://stmarysjsocnaigaon.github.io/About-Us/" class="text-gray-700 hover:text-blue-700 font-medium">About</a>
-          <a href="https://stmarysjsocnaigaon.github.io/Ministries/" class="text-gray-700 hover:text-blue-700 font-medium">Ministries</a>
-          <a href="https://stmarysjsocnaigaon.github.io/Events/" class="text-gray-700 hover:text-blue-700 font-medium">Events</a>
-          <a href="https://stmarysjsocnaigaon.github.io/Gallery/" class="text-gray-700 hover:text-blue-700 font-medium">Gallery</a>
-          <a href="https://stmarysjsocnaigaon.github.io/Contact/" class="text-blue-700 font-semibold">Contact</a>
-        </div>
-        <button class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" aria-label="Toggle menu" onclick="toggleMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-               viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
-      <a href="https://stmarysjsocnaigaon.github.io/Home/" class="block px-4 py-2 hover:bg-blue-50">Home</a>
-      <a href="https://stmarysjsocnaigaon.github.io/About-Us/" class="block px-4 py-2 hover:bg-blue-50">About</a>
-      <a href="https://stmarysjsocnaigaon.github.io/Ministries/" class="block px-4 py-2 hover:bg-blue-50">Ministries</a>
-      <a href="https://stmarysjsocnaigaon.github.io/Events/" class="block px-4 py-2 hover:bg-blue-50">Events</a>
-      <a href="https://stmarysjsocnaigaon.github.io/Gallery/" class="block px-4 py-2 hover:bg-blue-50">Gallery</a>
-      <a href="https://stmarysjsocnaigaon.github.io/Contact/" class="block px-4 py-2 hover:bg-blue-50">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="bg-blue-900 text-white text-center py-20 relative mt-16">
-    <img src="/About-Us/church-bg.jpeg" alt="Church Photo" class="absolute inset-0 w-full h-full object-cover opacity-30">
-    <div class="absolute inset-0 bg-black/30"></div>
-    <div class="relative z-10">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-      <p class="text-base md:text-lg max-w-3xl mx-auto">“Submit your prayer request or get in touch with us”</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="py-12 px-4 sm:px-6 lg:px-20">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-      
-      <!-- Contact Form -->
-      <div class="bg-white shadow-lg rounded-2xl p-6 sm:p-8">
-        <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">Send us a Message</h3>
-        <form action="https://formspree.io/f/xwpnokpg" method="POST" class="space-y-4">
-          <div>
-            <label class="block text-gray-700 font-medium mb-1">Name</label>
-            <input type="text" name="name" required class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-blue-500">
-          </div>
-          <div>
-            <label class="block text-gray-700 font-medium mb-1">Email</label>
-            <input type="email" name="email" required class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-blue-500">
-          </div>
-          <div>
-            <label class="block text-gray-700 font-medium mb-1">Subject</label>
-            <input type="text" name="subject" class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-blue-500">
-          </div>
-          <div>
-            <label class="block text-gray-700 font-medium mb-1">Message</label>
-            <textarea name="message" rows="4" required class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-blue-500"></textarea>
-          </div>
-          <button type="submit" class="w-full bg-blue-600 text-white font-medium py-3 rounded-xl shadow hover:bg-blue-700 transition">
-            Send Message
-          </button>
-        </form>
-      </div>
-
-      <!-- Church Info -->
-      <div class="space-y-6">
+    <!-- Contact Form -->
+    <div class="bg-white shadow-lg rounded-2xl p-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
+      <form action="https://formspree.io/f/xwpnokpg" method="POST" class="space-y-4">
         <div>
-          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Church Information</h3>
-          <p class="text-gray-700">
-            📍 St. Mary's Jacobite Syrian Church, Syrian Nagar, Juchandra, Naigaon East - Vasai, Dist. Palghar, Pin: 401208
-          </p>
-          <p class="text-gray-700">
-            📞 <a href="tel:+919876543210" class="text-blue-600 hover:underline">+91 98765 43210</a>
-          </p>
-          <p class="text-gray-700">
-            ✉️ <a href="mailto:stmarysnaigaon@gmail.com" class="text-blue-600 hover:underline">stmarysnaigaon@gmail.com</a>
-          </p>
+          <label class="block text-gray-700 font-medium">Name</label>
+          <input type="text" name="name" required 
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
         </div>
-
-        <!-- Google Map + Buttons -->
-        <div class="space-y-4">
-          <iframe class="w-full h-64 rounded-2xl shadow" 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.769703823631!2d72.87294077495562!3d19.362212044942713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9f85e07a2b1%3A0x6c3b7a50a2cbf5c!2sSt.%20Mary%E2%80%99s%20Jacobite%20Syrian%20Church%2C%20Naigaon!5e0!3m2!1sen!2sin!4v1693474839372!5m2!1sen!2sin" 
-                  allowfullscreen="" 
-                  loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-
-          <!-- Directions + Call Now -->
-          <div class="flex flex-col sm:flex-row gap-3">
-            <a href="https://www.google.com/maps/dir/?api=1&destination=St.+Mary's+Jacobite+Syrian+Church,+Syrian+Nagar,+Juchandra,+Naigaon+East+-+Vasai,+Palghar,+401208" 
-               target="_blank"
-               class="w-full sm:w-auto text-center bg-blue-600 text-white px-5 py-3 rounded-xl shadow hover:bg-blue-700 transition">
-              📍 Get Directions
-            </a>
-            <a href="tel:+919876543210" 
-               class="w-full sm:w-auto text-center bg-green-600 text-white px-5 py-3 rounded-xl shadow hover:bg-green-700 transition">
-              📞 Call Now
-            </a>
-          </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Email</label>
+          <input type="email" name="email" required 
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
         </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Message</label>
+          <textarea name="message" rows="4" required 
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+        </div>
+        <button type="submit" 
+                class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Contact Info + Map -->
+    <div class="space-y-6">
+      <div class="bg-white shadow-lg rounded-2xl p-6">
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Church Information</h3>
+        <p class="text-gray-700">
+          📍 St. Mary's Jacobite Syrian Church, Syrian Nagar, Juchandra, Naigaon East - Vasai, Dist. Palghar, Pin: 401208
+        </p>
+        <p class="text-gray-700 mt-2">
+          📞 <a href="tel:+919876543210" class="text-blue-600 hover:underline">+91 98765 43210</a>
+        </p>
+        <p class="text-gray-700">
+          ✉️ <a href="mailto:stmarysnaigaon@gmail.com" class="text-blue-600 hover:underline">stmarysnaigaon@gmail.com</a>
+        </p>
+      </div>
+
+      <!-- Responsive Google Map -->
+      <div class="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.114171936833!2d72.87906737467805!3d19.374987144878908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a8e68a26d32b%3A0x9d6b8c3a5d6b93df!2sSt.%20Mary's%20Jacobite%20Syrian%20Church%2C%20Naigaon!5e0!3m2!1sen!2sin!4v1693409823147!5m2!1sen!2sin" 
+          class="w-full h-full border-0"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Get Directions Button -->
+      <div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=St.+Mary's+Jacobite+Syrian+Church,+Naigaon" 
+           target="_blank"
+           class="block text-center bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">
+          🚗 Get Directions
+        </a>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 text-center">
-    <p class="text-sm md:text-base">© 2025 St. Mary’s Jacobite Syrian Orthodox Church, Naigaon. All Rights Reserved.</p>
-  </footer>
-
-</body>
-</html>
+  </div>
+</section>
