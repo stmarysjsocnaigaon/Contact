@@ -1,37 +1,35 @@
 <section id="contact" class="bg-gray-50 py-12 px-6">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-10">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
 
     <!-- Contact Form -->
-    <div class="lg:col-span-2 bg-white shadow-lg rounded-2xl p-8 flex flex-col">
+    <div class="bg-white shadow-lg rounded-2xl p-8">
       <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
-      <form action="https://formspree.io/f/xwpnokpg" method="POST" class="space-y-4 flex-grow flex flex-col justify-between">
-        <div class="space-y-4">
-          <div>
-            <label class="block text-gray-700 font-medium">Name</label>
-            <input type="text" name="name" required 
-                   class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
-          </div>
-          <div>
-            <label class="block text-gray-700 font-medium">Email</label>
-            <input type="email" name="email" required 
-                   class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
-          </div>
-          <div>
-            <label class="block text-gray-700 font-medium">Message</label>
-            <textarea name="message" rows="4" required 
-                      class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
-          </div>
+      <form action="https://formspree.io/f/xwpnokpg" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-gray-700 font-medium">Name</label>
+          <input type="text" name="name" required 
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Email</label>
+          <input type="email" name="email" required 
+                 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Message</label>
+          <textarea name="message" rows="4" required 
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
         </div>
         <button type="submit" 
-                class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition mt-4">
+                class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition">
           Send Message
         </button>
       </form>
     </div>
 
     <!-- Contact Info + Map -->
-    <div class="lg:col-span-3 flex flex-col">
-      <div class="bg-white shadow-lg rounded-2xl p-6 mb-6">
+    <div class="space-y-6">
+      <div class="bg-white shadow-lg rounded-2xl p-6">
         <h3 class="text-2xl font-bold text-gray-800 mb-4">Church Information</h3>
         <p class="text-gray-700">
           📍 St. Mary's Jacobite Syrian Church, Syrian Nagar, Juchandra, Naigaon East - Vasai, Dist. Palghar, Pin: 401208
@@ -44,26 +42,24 @@
         </p>
       </div>
 
-      <!-- Responsive Google Map (fills remaining height) -->
-      <div class="flex-grow flex flex-col">
-        <div class="w-full flex-grow rounded-2xl overflow-hidden shadow-lg">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.114171936833!2d72.87906737467805!3d19.374987144878908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a8e68a26d32b%3A0x9d6b8c3a5d6b93df!2sSt.%20Mary's%20Jacobite%20Syrian%20Church%2C%20Naigaon!5e0!3m2!1sen!2sin!4v1693409823147!5m2!1sen!2sin" 
-            class="w-full h-full border-0"
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+      <!-- Responsive Google Map -->
+      <div class="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.114171936833!2d72.87906737467805!3d19.374987144878908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a8e68a26d32b%3A0x9d6b8c3a5d6b93df!2sSt.%20Mary's%20Jacobite%20Syrian%20Church%2C%20Naigaon!5e0!3m2!1sen!2sin!4v1693409823147!5m2!1sen!2sin" 
+          class="w-full h-full border-0"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
-        <!-- Get Directions Button -->
-        <div class="mt-4">
-          <a href="https://www.google.com/maps/dir/?api=1&destination=St.+Mary's+Jacobite+Syrian+Church,+Naigaon" 
-             target="_blank"
-             class="block text-center bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">
-            🚗 Get Directions
-          </a>
-        </div>
+      <!-- Get Directions Button -->
+      <div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=St.+Mary's+Jacobite+Syrian+Church,+Naigaon" 
+           target="_blank"
+           class="block text-center bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">
+          🚗 Get Directions
+        </a>
       </div>
     </div>
   </div>
